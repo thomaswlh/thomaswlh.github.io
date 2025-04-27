@@ -49,20 +49,64 @@ If you’d rather work with plain HTML, CSS, and JavaScript, see the companion [
 
 ## 📦 Deployment on GitHub Pages
 
-1. In `package.json`, set `"homepage"` to:
-  
+This portfolio is set up to be deployed as a user GitHub Pages site (https://username.github.io). The deployment process uses two branches:
+- `source`: Contains the React source code
+- `main`: Contains the built files that are served by GitHub Pages
+
+### Initial Setup
+
+1. Create a repository named exactly `your-username.github.io`
+
+2. In `package.json`, set `"homepage"` to your GitHub Pages URL:
   ```json
-  "homepage": "https://your-username.github.io/your-repo"
+  "homepage": "https://your-username.github.io"
   ```
-  
-2. Push changes to GitHub.
-  
-3. Build & deploy:
-  
+
+3. Create and push the source branch:
   ```bash
-  yarn build   # production build  
-  yarn deploy  # publish to GitHub Pages  
+  git checkout -b source    # Create a new branch for source code
+  git push -u origin source # Push the source branch
   ```
+
+### Deployment Process
+
+1. Make sure you're on the source branch:
+  ```bash
+  git checkout source
+  ```
+
+2. Build the project:
+  ```bash
+  yarn build              # Create production build
+  ```
+
+3. Deploy to main branch:
+  ```bash
+  # Create a temporary directory for the build
+  mkdir -p /tmp/build_temp
+  cp -r build/* /tmp/build_temp/
+
+  # Switch to main branch and replace contents with build files
+  git checkout main
+  rm -rf *
+  cp -r /tmp/build_temp/* .
+  rm -rf /tmp/build_temp
+
+  # Commit and push the changes
+  git add .
+  git commit -m "Deploy to main branch"
+  git push origin main
+
+  # Switch back to source branch
+  git checkout source
+  ```
+
+### Important Notes
+
+- Always make changes in the `source` branch
+- The `main` branch should only contain the built files
+- After deployment, your site will be available at `https://your-username.github.io`
+- It may take a few minutes for changes to propagate through GitHub's CDN
   
 
 ## 📄 License
