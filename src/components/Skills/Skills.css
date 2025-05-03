@@ -9,4 +9,42 @@
 
 .skills__list-item {
   margin: 0.5em;
+  display: flex;
+  align-items: center;
+  /* min-width: 120px; */
+  height: auto;
+  width: auto;
+  /* padding: 5px 10px; */
+}
+
+.skills__list-item .CircularProgressbar {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.skills__list-item span {
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #3e98c7;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease 0s;
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: #d6d6d6;
+  stroke-linecap: round;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  fill: #3e98c7;
+  font-size: 20px;
+  dominant-baseline: middle;
+  text-anchor: middle;
 }
