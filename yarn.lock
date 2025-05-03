@@ -9256,6 +9256,11 @@ react-app-polyfill@^2.0.0:
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.4.1"
 
+react-circular-progressbar@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/react-circular-progressbar/-/react-circular-progressbar-2.2.0.tgz#282b7351dab2fd19c6d2c7f3cc698ed546c71c86"
+  integrity sha512-cgyqEHOzB0nWMZjKfWN3MfSa1LV3OatcDjPz68lchXQUEiBD5O1WsAtoVK4/DSL0B4USR//cTdok4zCBkq8X5g==
+
 react-dev-utils@^11.0.3:
   version "11.0.4"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-11.0.4.tgz#a7ccb60257a1ca2e0efe7a83e38e6700d17aa37a"
