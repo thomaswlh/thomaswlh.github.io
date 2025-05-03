@@ -25,15 +25,19 @@ const projects = [
     stack: ['React', 'Material UI', 'CSS'],
     sourceCode: 'https://github.com/thomaswlh/cleanfolio-personal-website',
     livePreview: 'https://thomaswlh.github.io/',
+  },
+  {
+    name: 'um-bus-mcp',
+    description: 'A mcp server for accessing the UM campus shuttle bus info',
+    stack: ['Python', 'MCP'],
+    sourceCode: 'https://github.com/thomaswlh/um-bus-mcp',
   }
 ]
 
 
 const skills = [
   'Python',
-  'HTML',
-  'CSS',
-  'JavaScript',
+  'MCP',
   'Git',
 ]
 
