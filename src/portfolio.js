@@ -28,7 +28,7 @@ const projects = [
   },
   {
     name: 'um-bus-mcp',
-    description: 'A mcp server for accessing the UM campus shuttle bus info',
+    description: 'A mcp server for accessing the UM campus loop bus schedule & info',
     stack: ['Python', 'MCP'],
     sourceCode: 'https://github.com/thomaswlh/um-bus-mcp',
   }
@@ -36,9 +36,9 @@ const projects = [
 
 
 const skills = [
-  'Python',
-  'MCP',
-  'Git',
+  { name: 'Python', percentage: 75 },
+  { name: 'MCP', percentage: 75 },
+  { name: 'Git', percentage: 80 },
 ]
 
 const contact = {
