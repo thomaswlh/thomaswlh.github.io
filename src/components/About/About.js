@@ -1,5 +1,6 @@
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import Typewriter from 'typewriter-effect';
 import { about } from '../../portfolio'
 import './About.css'
 
@@ -10,7 +11,19 @@ const About = () => {
     <div className='about center'>
       {name && (
         <h1>
-          Hi, I am <span className='about__name'>{name}.</span>
+          <Typewriter
+            options={{
+              cursor: "|",
+              autoStart: true,
+            }}
+            onInit={tw => {
+              tw
+              .typeString(
+                `Hi, I am <span class="about__name">${name}.</span>`
+              )
+              .start();
+            }}
+          />
         </h1>
       )}
 
@@ -55,3 +68,5 @@ const About = () => {
 }
 
 export default About
+
+
