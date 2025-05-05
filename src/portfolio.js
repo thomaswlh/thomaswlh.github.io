@@ -9,7 +9,7 @@ const about = {
   name: 'Thomas Wu',
   role: 'passionate computer science student',
   description:
-    "I'm a passionate Computer Science student 👨‍💻 with a keen interest in Cyber Security 🔒 and AI 🤖. I love contributing to open source 🌐 and building meaningful projects that leverage new technologies to help society . When I'm not coding, I enjoy reading 📚, K-pop 🎶, and various types of sports . Feel free to connect 🤝 or check out my projects!",
+    "I'm a passionate Computer Science student 👨‍💻 with a keen interest in Cyber Security 🔒 and AI 🤖. I love contributing to open source 🌐 and building meaningful projects that leverage new technologies to help society . When I'm not coding, I enjoy reading 📚, learning about Korean culture 🇰🇷 , and various types of sports . Feel free to connect 🤝 or check out my projects!",
   resume: '',
   social: {
     linkedin: 'https://www.linkedin.com/in/thomaswu06/',
