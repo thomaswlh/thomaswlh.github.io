@@ -11,7 +11,7 @@ git checkout source
 
 # Install dependencies
 echo "Installing dependencies..."
-yarn
+yarn install
 
 # Build
 echo "Building project..."
