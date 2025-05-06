@@ -38,7 +38,10 @@ const projects = [
 const skills = [
   { name: 'Python', percentage: 75 },
   { name: 'MCP', percentage: 75 },
+  { name: 'n8n', percentage: 65 },
+  { name: 'Prompt Engineering', percentage: 80}
   { name: 'Git', percentage: 80 },
+
 ]
 
 const contact = {
