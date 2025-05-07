@@ -45,6 +45,7 @@ If you’d rather work with plain HTML, CSS, and JavaScript, see the companion [
   
 3. **Theme & styling**  
   Modify or add CSS in `src/index.css`, or integrate Tailwind/Sass as desired.
+  - To control the number of skill items per row, adjust the `.skills__list` container width (`max-width`/`width`) and the margins or `min-width` on `.skills__list-item` in `src/components/Skills/Skills.css`.
   
 
 ## 📦 Deployment on GitHub Pages
