@@ -36,12 +36,11 @@ const projects = [
 
 
 const skills = [
-  { name: 'Python', percentage: 75 },
-  { name: 'MCP', percentage: 75 },
-  { name: 'n8n', percentage: 65 },
-  { name: 'Prompt Engineering', percentage: 80},
-  { name: 'Git', percentage: 80 },
-
+  { name: 'Python', percentage: 75, link: 'https://www.python.org/' },
+  { name: 'MCP', percentage: 75, link: 'https://modelcontextprotocol.io/introduction' },
+  { name: 'n8n', percentage: 65, link: 'https://n8n.io/' },
+  { name: 'Prompt Engineering', percentage: 80, link: 'https://www.promptingguide.ai/' },
+  { name: 'Git', percentage: 80, link: 'https://git-scm.com/' },
 ]
 
 const contact = {
