@@ -37,11 +37,15 @@ const projects = [
 
 const skills = [
   { name: 'Python', percentage: 75, link: 'https://www.python.org/' },
-  { name: 'MCP', percentage: 75, link: 'https://modelcontextprotocol.io/introduction' },
-  { name: 'n8n', percentage: 65, link: 'https://n8n.io/' },
+  { name: 'MCP', percentage: 70, link: 'https://modelcontextprotocol.io/introduction' },
+  { name: 'n8n', percentage: 60, link: 'https://n8n.io/' },
   { name: 'Prompt Engineering', percentage: 80, link: 'https://www.promptingguide.ai/' },
-  { name: 'Git', percentage: 80, link: 'https://git-scm.com/' },
+  { name: 'Git', percentage: 70, link: 'https://git-scm.com/' },
+  { name: 'SPSS', percentage: 60, link: 'https://www.ibm.com/spss'}
 ]
+
+// Sort skills in descending order by percentage
+skills.sort((a, b) => b.percentage - a.percentage)
 
 const contact = {
   // email is optional - if left empty Contact section won't show up
