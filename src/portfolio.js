@@ -27,25 +27,27 @@ const projects = [
     livePreview: 'https://thomaswlh.github.io/',
   },
   {
-    name: 'um-bus-mcp',
+    name: 'Campus Suttle Bus MCP Server',
     description: 'A mcp server for accessing the UM campus loop bus schedule & info',
     stack: ['Python', 'MCP'],
     sourceCode: 'https://github.com/thomaswlh/um-bus-mcp',
+  },
+  {
+    name: 'Visitor Monitoring & Visualization Dashboard​',
+    description: 'A computer vison project the enables real-time people counting, dwell tracking & dashboard analytics for ad/exhibit entrances.',
+    stack: ['Python', 'OpenCV', 'Norfair', 'MobileNet-SSD', 'Streamlit', 'Kivy/NiceGUI'],
+    sourceCode: 'https://github.com/thomaswlh/realtime-visitor-monitor',
   }
 ]
 
 
 const skills = [
-  { name: 'Python', percentage: 75, link: 'https://www.python.org/' },
-  { name: 'MCP', percentage: 70, link: 'https://modelcontextprotocol.io/introduction' },
-  { name: 'n8n', percentage: 60, link: 'https://n8n.io/' },
-  { name: 'Prompt Engineering', percentage: 80, link: 'https://www.promptingguide.ai/' },
-  { name: 'Git', percentage: 70, link: 'https://git-scm.com/' },
-  { name: 'SPSS', percentage: 60, link: 'https://www.ibm.com/spss'}
-]
+  { name: 'Python', link: 'https://www.python.org/' },
+  { name: 'MCP', link: 'https://modelcontextprotocol.io/introduction' },
+  { name: 'n8n', link: 'https://n8n.io/' },
+  { name: 'SPSS', link: 'https://www.ibm.com/spss'}
+].sort((a, b) => a.name.localeCompare(b.name))
 
-// Sort skills in descending order by percentage
-skills.sort((a, b) => b.percentage - a.percentage)
 
 const contact = {
   // email is optional - if left empty Contact section won't show up
