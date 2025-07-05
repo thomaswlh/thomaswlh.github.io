@@ -1,5 +1,3 @@
-import { CircularProgressbar } from 'react-circular-progressbar';
-// import 'react-circular-progressbar/dist/styles.css';
 import uniqid from 'uniqid'
 import { useContext } from 'react';
 import { ThemeContext } from '../../contexts/theme'
@@ -21,31 +19,9 @@ const Skills = () => {
             {skill.link ? (
               <a href={skill.link} target="_blank" rel="noopener noreferrer" className="skills__link-wrapper">
                 {skill.name}
-                <CircularProgressbar
-                  value={skill.percentage}
-                  text={`${skill.percentage}%`}
-                  strokeWidth="15"
-                  styles={{
-                    path: { stroke: themeName === 'dark' ? '#90a0d9' : '#2978b5' },
-                    trail: { stroke: themeName === 'dark' ? '#2a2f4c' : '#d6d6d6' },
-                    text: { fill: themeName === 'dark' ? '#90a0d9' : '#2978b5', fontSize: '30px', transform: 'translateY(3px)' }
-                  }}
-                />
               </a>
             ) : (
-              <>
-                {skill.name}
-                <CircularProgressbar
-                  value={skill.percentage}
-                  text={`${skill.percentage}%`}
-                  strokeWidth="15"
-                  styles={{
-                    path: { stroke: themeName === 'dark' ? '#90a0d9' : '#2978b5' },
-                    trail: { stroke: themeName === 'dark' ? '#2a2f4c' : '#d6d6d6' },
-                    text: { fill: themeName === 'dark' ? '#90a0d9' : '#2978b5', fontSize: '30px', transform: 'translateY(3px)' }
-                  }}
-                />
-              </>
+              <>{skill.name}</>
             )}
           </li>
         ))}
